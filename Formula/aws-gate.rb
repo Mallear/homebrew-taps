@@ -1,11 +1,11 @@
 class AwsGate < Formula
   include Language::Python::Virtualenv
 
-  desc "Shiny new formula"
+  desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/cb/ad/b9f2761475087b1628a20006ed38d78f0e019ea85ee57c51cf23d0a02b0d/aws-gate-0.4.1.tar.gz"
-  sha256 "64474f0a98405642eb82333b16a4d8a6606f1ce7f63c2a2115b7d1e6b902d53b"
-  version "0.4.1"
+  url "https://files.pythonhosted.org/packages/29/14/ca56359b3e9666824012f5687ffde2a781167150c1b1bd98e5a0ec8c4275/aws-gate-0.4.2.tar.gz"
+  sha256 "19c157edfebc71947b82dbd6b39092521d27654f6871c155cad92ecd187b0fab"
+  version "0.4.2"
 
   depends_on "python3"
 
