@@ -3,20 +3,25 @@ class AwsGate < Formula
 
   desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/29/14/ca56359b3e9666824012f5687ffde2a781167150c1b1bd98e5a0ec8c4275/aws-gate-0.4.2.tar.gz"
-  sha256 "19c157edfebc71947b82dbd6b39092521d27654f6871c155cad92ecd187b0fab"
-  version "0.4.2"
+  url "https://files.pythonhosted.org/packages/85/41/eada1d81574fc5e35acc8b83964277f6774d1b857b9d481e9b337c21840a/aws-gate-0.4.3.tar.gz"
+  sha256 "cb1347f84ce5b7c45c1d09f8d0ffc21bb38bf2f8254de3b4536bd819f8dbe30b"
+  version "0.4.3"
 
   depends_on "python3"
 
+  resource "asn1crypto" do
+    url "https://files.pythonhosted.org/packages/fc/f1/8db7daa71f414ddabfa056c4ef792e1461ff655c2ae2928a2b675bfed6b4/asn1crypto-0.24.0.tar.gz"
+    sha256 "9d5c20441baf0cb60a4ac34cc447c6c189024b6b4c6cd7877034f4965c464e49"
+  end
+
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/b3/1d/e0e571903625c457ff178108b36c361f8b54b7b1fc60887e29c344bd789d/boto3-1.9.206.tar.gz"
-    sha256 "932a9c0c6978a6d6421335e077f233bd6d1c6f6e7879293fc7488471f67ad319"
+    url "https://files.pythonhosted.org/packages/ed/17/70c67754fd6145b6f792c920d9c7fdebff789d58508cbb2593ac34d7075c/boto3-1.9.237.tar.gz"
+    sha256 "874b3d8b16f94cec8365bdf0d1bd40951ee0373152b84f9f72d46d2e89999962"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/58/4a/84a00793f17e58ae7984d83ac9672ebc9f62dc5a1536c147cb3a965bb6f1/botocore-1.12.206.tar.gz"
-    sha256 "e96242bd5915fb722f9a1926352aca3bf12b755146cb1826c27a766a14361b80"
+    url "https://files.pythonhosted.org/packages/30/10/079250d4882c8460c45a737e3335820355f0973894d7d60f2f1bb5aa5491/botocore-1.12.237.tar.gz"
+    sha256 "717f4bb3a16a8b5c2b3546e3f839ee3707ddfc8d0379dcb31030fbb7917b8a9b"
   end
 
   resource "certifi" do
@@ -24,9 +29,19 @@ class AwsGate < Formula
     sha256 "945e3ba63a0b9f577b1395204e13c3a231f9bc0223888be653286534e5873695"
   end
 
+  resource "cffi" do
+    url "https://files.pythonhosted.org/packages/93/1a/ab8c62b5838722f29f3daffcc8d4bd61844aa9b5f437341cc890ceee483b/cffi-1.12.3.tar.gz"
+    sha256 "041c81822e9f84b1d9c401182e174996f0bae9991f33725d059b771744290774"
+  end
+
   resource "chardet" do
     url "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz"
     sha256 "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
+  end
+
+  resource "cryptography" do
+    url "https://files.pythonhosted.org/packages/c2/95/f43d02315f4ec074219c6e3124a87eba1d2d12196c2767fadfdc07a83884/cryptography-2.7.tar.gz"
+    sha256 "e6347742ac8f35ded4a46ff835c60e68c22a536a8ae5c4422966d06946b6d4c6"
   end
 
   resource "docutils" do
@@ -47,6 +62,11 @@ class AwsGate < Formula
   resource "marshmallow" do
     url "https://files.pythonhosted.org/packages/16/16/d1785e853c3c9ae179c75be5cb086fb9a0d5bb11365d3a13f103795ec95f/marshmallow-2.20.0.tar.gz"
     sha256 "6f027308cddb25b74f8245b833a355e65b21b362f38773b40325ff9b5da6c959"
+  end
+
+  resource "pycparser" do
+    url "https://files.pythonhosted.org/packages/68/9e/49196946aee219aead1290e00d1e7fdeab8567783e83e1b9ab5585e6206a/pycparser-2.19.tar.gz"
+    sha256 "a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"
   end
 
   resource "python-dateutil" do
