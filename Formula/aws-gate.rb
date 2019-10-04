@@ -3,9 +3,9 @@ class AwsGate < Formula
 
   desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/85/41/eada1d81574fc5e35acc8b83964277f6774d1b857b9d481e9b337c21840a/aws-gate-0.4.3.tar.gz"
-  sha256 "cb1347f84ce5b7c45c1d09f8d0ffc21bb38bf2f8254de3b4536bd819f8dbe30b"
-  version "0.4.3"
+  url "https://files.pythonhosted.org/packages/9a/4c/befecdf4aaf0ce18785c6d1c8e9401e1b2cb610f3cb5abcdfd6fb737779e/aws-gate-0.5.0.tar.gz"
+  sha256 "289b2288c4bff91a2493ef9ae10fa85ac6a237c8f813eae00d080b60844294a9"
+  version "0.5.0"
 
   depends_on "python3"
 
@@ -97,6 +97,11 @@ class AwsGate < Formula
   resource "urllib3" do
     url "https://files.pythonhosted.org/packages/4c/13/2386233f7ee40aa8444b47f7463338f3cbdf00c316627558784e3f542f07/urllib3-1.25.3.tar.gz"
     sha256 "dbe59173209418ae49d485b87d1681aefa36252ee85884c31346debd19463232"
+  end
+
+  resource "wrapt" do
+    url "https://files.pythonhosted.org/packages/23/84/323c2415280bc4fc880ac5050dddfb3c8062c2552b34c2e512eb4aa68f79/wrapt-1.11.2.tar.gz"
+    sha256 "565a021fd19419476b9362b05eeaa094178de64f8361e44468f9e9d7843901e1"
   end
 
   def install
