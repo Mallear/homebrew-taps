@@ -3,20 +3,20 @@ class AwsGate < Formula
 
   desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/fd/28/3e31c7ae83bb6f9141fabc44ab7c323ae215654eab841b16bd3a749d3e5d/aws-gate-0.6.1.tar.gz"
-  sha256 "32cccd73d7efc4769f0b7c010cbc0ec75d79048fc4cacd54af0fe4cc972c2dce"
-  version "0.6.1"
+  url "https://files.pythonhosted.org/packages/0c/87/1132fc4e13f706681e6dcc57a0a3a86d0c5d96dfa8eb1af95a4c455d5f06/aws-gate-0.7.0.tar.gz"
+  sha256 "51b622f43ce8408c632fc390c493034888f75f26a69c83f0ec1bceb2b92dad6e"
+  version "0.7.0"
 
   depends_on "python3"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/13/bf/b4be52944d00af3bea1182dcae0c888824c2c50031e289f994f09ae845e4/boto3-1.10.4.tar.gz"
-    sha256 "63b80dd065221a3143f80559392769a94c303e616bdb956d66685cd3160d409e"
+    url "https://files.pythonhosted.org/packages/91/c2/ed725ce39d9cc5cd40f7f0b8e666d2a282f5c5d15c08e66af42ca4ae892e/boto3-1.10.14.tar.gz"
+    sha256 "aa40df7958bb274fad45ce6cc9ae1c77aac3b4cf33c34684646b42583a52d7e0"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/1c/cb/b97fda1ef6f80d9db819dd43c2279e1197dcd6da62784c7d58e583ffd008/botocore-1.13.4.tar.gz"
-    sha256 "3773a28e139ccd41435afe64ee5945e5ccd1b84706f54bcb971788d71f7f138c"
+    url "https://files.pythonhosted.org/packages/37/c3/a5f9f61f3f18312859eebdbf79313830b3a980b8b84b6ff83bd49163f8ea/botocore-1.13.14.tar.gz"
+    sha256 "d789f30a5def264b9d21a917aeadc4e5fc2b6a03a61f222befcfaf80eaba86e5"
   end
 
   resource "certifi" do
@@ -55,8 +55,8 @@ class AwsGate < Formula
   end
 
   resource "marshmallow" do
-    url "https://files.pythonhosted.org/packages/d1/c1/66711e6dc7c2cb665435382636a03bed30dcc2fca12fa09500ce0059b1f8/marshmallow-3.2.1.tar.gz"
-    sha256 "9a2f3e8ea5f530a9664e882d7d04b58650f46190178b2264c72b7d20399d28f0"
+    url "https://files.pythonhosted.org/packages/18/ff/56b1bbac73b9afbb79a281486a1c88ad83988c05e1b3873531556325ed05/marshmallow-3.2.2.tar.gz"
+    sha256 "1a358beb89c2b4d5555272065a9533591a3eb02f1b854f3c4002d88d8f2a1ddb"
   end
 
   resource "pycparser" do
