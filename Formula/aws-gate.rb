@@ -3,9 +3,9 @@ class AwsGate < Formula
 
   desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/0c/87/1132fc4e13f706681e6dcc57a0a3a86d0c5d96dfa8eb1af95a4c455d5f06/aws-gate-0.7.0.tar.gz"
-  sha256 "51b622f43ce8408c632fc390c493034888f75f26a69c83f0ec1bceb2b92dad6e"
-  version "0.7.0"
+  url "https://files.pythonhosted.org/packages/82/d6/1e502855830ad6d8493ab9df458f2cf2962a4491fb86c54ae7489691c774/aws-gate-0.7.1.tar.gz"
+  sha256 "124eb2e3783b99d9561bd71408cdafbbc3c34a41ffffc39f47f18e17df990c39"
+  version "0.7.1"
 
   depends_on "python3"
 
