@@ -3,20 +3,20 @@ class AwsGate < Formula
 
   desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/82/d6/1e502855830ad6d8493ab9df458f2cf2962a4491fb86c54ae7489691c774/aws-gate-0.7.1.tar.gz"
-  sha256 "124eb2e3783b99d9561bd71408cdafbbc3c34a41ffffc39f47f18e17df990c39"
-  version "0.7.1"
+  url "https://files.pythonhosted.org/packages/62/72/fa8c1803ecc3104efcc33f8947f577bdc9f968b3deb3a5d569a0d051c77a/aws-gate-0.7.2.tar.gz"
+  sha256 "058779270c3c5f8f0ff56074387e9ece7bd144100652297c4938cb6f6db7aa38"
+  version "0.7.2"
 
   depends_on "python3"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/91/c2/ed725ce39d9cc5cd40f7f0b8e666d2a282f5c5d15c08e66af42ca4ae892e/boto3-1.10.14.tar.gz"
-    sha256 "aa40df7958bb274fad45ce6cc9ae1c77aac3b4cf33c34684646b42583a52d7e0"
+    url "https://files.pythonhosted.org/packages/b8/3e/b61acb068a6ab023ccc8e265644cbb713c8cc87808dc530eba435076dc87/boto3-1.10.28.tar.gz"
+    sha256 "21a75f1a3f85fbfcc00d691200fbe4aa71f18e98389d88401f38e35ae50825e9"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/37/c3/a5f9f61f3f18312859eebdbf79313830b3a980b8b84b6ff83bd49163f8ea/botocore-1.13.14.tar.gz"
-    sha256 "d789f30a5def264b9d21a917aeadc4e5fc2b6a03a61f222befcfaf80eaba86e5"
+    url "https://files.pythonhosted.org/packages/14/8b/1ef68b0e96fec07f653abcb93c35874dacaca49ef1e2055b9aa10bf1c499/botocore-1.13.28.tar.gz"
+    sha256 "5a343562b52d6216dbda89b8969dcbffa4474c7df9cbe04ee7440033c1c4075b"
   end
 
   resource "certifi" do
@@ -25,8 +25,8 @@ class AwsGate < Formula
   end
 
   resource "cffi" do
-    url "https://files.pythonhosted.org/packages/93/1a/ab8c62b5838722f29f3daffcc8d4bd61844aa9b5f437341cc890ceee483b/cffi-1.12.3.tar.gz"
-    sha256 "041c81822e9f84b1d9c401182e174996f0bae9991f33725d059b771744290774"
+    url "https://files.pythonhosted.org/packages/2d/bf/960e5a422db3ac1a5e612cb35ca436c3fc985ed4b7ed13a1b4879006f450/cffi-1.13.2.tar.gz"
+    sha256 "599a1e8ff057ac530c9ad1778293c665cb81a791421f46922d80a86473c13346"
   end
 
   resource "chardet" do
@@ -85,8 +85,8 @@ class AwsGate < Formula
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
-    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+    url "https://files.pythonhosted.org/packages/94/3e/edcf6fef41d89187df7e38e868b2dd2182677922b600e880baad7749c865/six-1.13.0.tar.gz"
+    sha256 "30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
   end
 
   resource "unix-ar" do
@@ -95,8 +95,8 @@ class AwsGate < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/ff/44/29655168da441dff66de03952880c6e2d17b252836ff1aa4421fba556424/urllib3-1.25.6.tar.gz"
-    sha256 "9a107b99a5393caf59c7aa3c1249c16e6879447533d0887f4336dde834c7be86"
+    url "https://files.pythonhosted.org/packages/ad/fc/54d62fa4fc6e675678f9519e677dfc29b8964278d75333cf142892caf015/urllib3-1.25.7.tar.gz"
+    sha256 "f3c5fd51747d450d4dcf6f923c81f78f811aab8205fda64b0aba34a4e48b0745"
   end
 
   resource "wrapt" do
