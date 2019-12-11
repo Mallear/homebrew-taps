@@ -3,11 +3,10 @@ class AwsGate < Formula
 
   desc "AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/96/93/180fe71fa5d8dae43ba75e08046289f2ad1b48ee857912eead4e8d5d1488/aws-gate-0.8.1.tar.gz"
-  sha256 "26ae432a633d474af6ce376205a5c23e991f37aff17a51ae74fd23e146ca9473"
-  version "0.8.1"
+  url "https://files.pythonhosted.org/packages/4f/73/4af75df943ba008d951ece1b68cb10955200453b4c7a3d5d63d4f17a43d8/aws-gate-0.8.2.tar.gz"
+  sha256 "f60472a12ad2155fe9ae38f86891322cd97797a9c4bae371f6d00cde67289605"
 
-  depends_on "python3"
+  depends_on "python"
 
   resource "boto3" do
     url "https://files.pythonhosted.org/packages/44/b3/83d37dd5e75713e48c7a9546ce3ff9ab61359bce87c836f92d67d679f589/boto3-1.10.36.tar.gz"
@@ -111,6 +110,6 @@ class AwsGate < Formula
 
   test do
     cmd_output = shell_output("#{bin}/aws-gate --version")
-    assert_match "aws-gate " + version, cmd_output
+    assert_match "aws-gate #{version}", cmd_output
   end
 end
