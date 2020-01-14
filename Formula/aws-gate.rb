@@ -1,21 +1,21 @@
 class AwsGate < Formula
   include Language::Python::Virtualenv
 
-  desc "AWS SSM Session manager client"
+  desc "Better AWS SSM Session manager client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/d8/f8/f0e86da703b1c40287d8f2f192430ba4852af8b2697292c55a8f1c6e3526/aws-gate-0.8.4.tar.gz"
-  sha256 "d967e03183165595577e8203ae66e536c4509c42a03570e6bea622ac901eabf1"
+  url "https://files.pythonhosted.org/packages/a4/c5/7f58da8340060539821bb045195b20535ffc88c3796f0d19dc53ae97991d/aws-gate-0.8.5.tar.gz"
+  sha256 "3d534524b9f55a13d969bf3f88489da33ff9d6c37ba72bb445ca042206849d6e"
 
   depends_on "python"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/31/45/fb4db3a8fda43470236631a2268f9f622e0a5324ed96aae2b0aed4ee8922/boto3-1.10.45.tar.gz"
-    sha256 "f05ee90a738c2f1ec8088121030229f26ef6a809fb9a1338de2118fd088dd99a"
+    url "https://files.pythonhosted.org/packages/1a/15/9854e57631239758a5755da3147f6dc4f4daba657613e15c69f5b759df3a/boto3-1.11.2.tar.gz"
+    sha256 "37c0d967e9d7044208c84c6d082f03fc5aeeb355a78ea91f8cb66316aaeed890"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/63/44/c81fe3cb9b1e4e278a7feb8e9d488beccce0d3e1ccbf87501004a750454e/botocore-1.13.45.tar.gz"
-    sha256 "88ee646f7a0fe6a418681c6f119a590fae23d8439c48c2aec6878f7f89430b1f"
+    url "https://files.pythonhosted.org/packages/43/7f/598a148d4c33de4db3138b0f279717d0bf727cf8e6250dd30f7392e3ced7/botocore-1.14.2.tar.gz"
+    sha256 "e2e2bfac52b454335a1a0c1a3dd651928ad2b9fc8cd46d5b367fbb8d6622dc9d"
   end
 
   resource "certifi" do
@@ -79,8 +79,8 @@ class AwsGate < Formula
   end
 
   resource "s3transfer" do
-    url "https://files.pythonhosted.org/packages/39/12/150cd55c606ebca6725683642a8e7068cd6af10f837ce5419a9f16b7fb55/s3transfer-0.2.1.tar.gz"
-    sha256 "6efc926738a3cd576c2a79725fed9afde92378aa5c6a957e3af010cb019fac9d"
+    url "https://files.pythonhosted.org/packages/43/bf/5a0117a8e848aebc8a0cb1f2f62c016ff8eec481568ba6714c48e23a01c1/s3transfer-0.3.0.tar.gz"
+    sha256 "e3343ae0f371781c17590cf06cb818a54484fbac9a65a5be7603a39b0a6d7b31"
   end
 
   resource "six" do
