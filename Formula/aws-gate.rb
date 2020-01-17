@@ -1,26 +1,26 @@
 class AwsGate < Formula
   include Language::Python::Virtualenv
 
-  desc "Better AWS SSM Session manager client"
+  desc "Better AWS SSM Session manager CLI client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/a4/c5/7f58da8340060539821bb045195b20535ffc88c3796f0d19dc53ae97991d/aws-gate-0.8.5.tar.gz"
-  sha256 "3d534524b9f55a13d969bf3f88489da33ff9d6c37ba72bb445ca042206849d6e"
+  url "https://files.pythonhosted.org/packages/53/f3/1702aafc92761f872b2a47854fc2f4402e0ebde6ad82862cc40bfae1bdc9/aws-gate-0.8.6.tar.gz"
+  sha256 "0a9738200851b9d78de94544792009fff954c47f7d567d73da9efe8dd226606d"
 
   depends_on "python"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/1a/15/9854e57631239758a5755da3147f6dc4f4daba657613e15c69f5b759df3a/boto3-1.11.2.tar.gz"
-    sha256 "37c0d967e9d7044208c84c6d082f03fc5aeeb355a78ea91f8cb66316aaeed890"
+    url "https://files.pythonhosted.org/packages/8c/70/d7166758ee8ece0074c6db19c2f479b885fb180ac4c25eb774d8a7a9cae9/boto3-1.11.3.tar.gz"
+    sha256 "916efdecda945daba08dca9032373440db681e53e6b46e7d0cae104ffd5ac7ca"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/43/7f/598a148d4c33de4db3138b0f279717d0bf727cf8e6250dd30f7392e3ced7/botocore-1.14.2.tar.gz"
-    sha256 "e2e2bfac52b454335a1a0c1a3dd651928ad2b9fc8cd46d5b367fbb8d6622dc9d"
+    url "https://files.pythonhosted.org/packages/4a/c3/b826ee028793a4a651f84385595fa490f86194da2cbd40206629a46c77a1/botocore-1.14.3.tar.gz"
+    sha256 "799562d2af023f49518676c6b72ee07325da027513406b4b9d8e5b74ecea8257"
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/62/85/7585750fd65599e88df0fed59c74f5075d4ea2fe611deceb95dd1c2fb25b/certifi-2019.9.11.tar.gz"
-    sha256 "e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50"
+    url "https://files.pythonhosted.org/packages/41/bf/9d214a5af07debc6acf7f3f257265618f1db242a3f8e49a9b516f24523a6/certifi-2019.11.28.tar.gz"
+    sha256 "25b64c7da4cd7479594d035c08c2d809eb4aab3a26e5a990ea98cc450c320f1f"
   end
 
   resource "cffi" do
@@ -64,13 +64,13 @@ class AwsGate < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/ad/99/5b2e99737edeb28c71bcbec5b5dda19d0d9ef3ca3e92e3e925e7c0bb364c/python-dateutil-2.8.0.tar.gz"
-    sha256 "c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
+    url "https://files.pythonhosted.org/packages/be/ed/5bbc91f03fa4c839c4c7360375da77f9659af5f7086b7a7bdda65771c8e0/python-dateutil-2.8.1.tar.gz"
+    sha256 "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/e3/e8/b3212641ee2718d556df0f23f78de8303f068fe29cdaa7a91018849582fe/PyYAML-5.1.2.tar.gz"
-    sha256 "01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4"
+    url "https://files.pythonhosted.org/packages/3d/d9/ea9816aea31beeadccd03f1f8b625ecf8f645bd66744484d162d84803ce5/PyYAML-5.3.tar.gz"
+    sha256 "e9f45bd5b92c7974e59bcd2dcc8631a6b6cc380a904725fce7bc08872e691615"
   end
 
   resource "requests" do
@@ -84,8 +84,8 @@ class AwsGate < Formula
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/94/3e/edcf6fef41d89187df7e38e868b2dd2182677922b600e880baad7749c865/six-1.13.0.tar.gz"
-    sha256 "30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
+    url "https://files.pythonhosted.org/packages/21/9f/b251f7f8a76dec1d6651be194dfba8fb8d7781d10ab3987190de8391d08e/six-1.14.0.tar.gz"
+    sha256 "236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"
   end
 
   resource "unix-ar" do
