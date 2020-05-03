@@ -3,19 +3,19 @@ class AwsGate < Formula
 
   desc "Better AWS SSM Session manager CLI client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/26/b5/47efa854a446bbe594bc99c7fc2f836624d426f8c8be80a8696bb5169c24/aws-gate-0.8.8.tar.gz"
-  sha256 "44a17a7c59e6f9ba6cd73d7b99610d5f0f8faeacbffb2462f78d82fcb7784488"
+  url "https://files.pythonhosted.org/packages/68/c1/1ffe751aa7c718dbef7a9d659a939bc3253b1431479996ff0bb383dc6053/aws-gate-0.9.0.tar.gz"
+  sha256 "82ea729108c4418a06ae9796d079168d63d990296f39df1ea093dbdefdf093a3"
 
   depends_on "python"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/ad/08/0d977abed3d7adbd7158ffc1027c63e56381877e7442b06c7a849cb4cc1f/boto3-1.12.43.tar.gz"
-    sha256 "1a6a3d95d20cacd677e2af5cbff7027abea35b78f1b8126388ef7fa517655cfe"
+    url "https://files.pythonhosted.org/packages/27/82/6d6eba7b84868580e53a97abc66e8bcf5c256e2e314a148049025ff7c9f8/boto3-1.12.49.tar.gz"
+    sha256 "7b82123d25100c834b71868d60e66fca37e0691edd444fb149d004ab00bea3b4"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/18/95/59951f7ab2e92da30a6f0ab1697ab817a7f336340f5e991340a407c20ede/botocore-1.15.43.tar.gz"
-    sha256 "9721e7b413e3b1b2b7670940e89d0088d1b83bd54cae1ccfe7305eb2e9361c17"
+    url "https://files.pythonhosted.org/packages/0c/47/b88dcace59102cffe24e4b2d15f6c7b60df8ee79f82e9c2264d5c90a3c01/botocore-1.15.49.tar.gz"
+    sha256 "a474131ba7a7d700b91696a27e8cdcf1b473084addf92f90b269ebd8f5c3d3e0"
   end
 
   resource "certifi" do
@@ -34,8 +34,8 @@ class AwsGate < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/9d/0a/d7060601834b1a0a84845d6ae2cd59be077aafa2133455062e47c9733024/cryptography-2.9.tar.gz"
-    sha256 "0cacd3ef5c604b8e5f59bf2582c076c98a37fe206b31430d0cd08138aff0986e"
+    url "https://files.pythonhosted.org/packages/56/3b/78c6816918fdf2405d62c98e48589112669f36711e50158a0c15d804c30d/cryptography-2.9.2.tar.gz"
+    sha256 "a0c30272fb4ddda5f5ffc1089d7405b7a71b0b0f51993cb4e5dbb4590b2fc229"
   end
 
   resource "docutils" do
