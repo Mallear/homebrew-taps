@@ -3,19 +3,20 @@ class AwsGate < Formula
 
   desc "Better AWS SSM Session manager CLI client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/a4/6b/09c68588813aceb04147431e31cd4f0a9de9512472c8f8c435e06b1ec758/aws-gate-0.9.2.tar.gz"
-  sha256 "dd0602561eafc705fd9d17f5a1a75c60478994245285eb970503081e40cbad09"
+  url "https://files.pythonhosted.org/packages/2a/76/05e79ccab4d498d41f38723ef0fe73330a5c80845826baf2400ca7f208f1/aws-gate-0.9.3.tar.gz"
+  sha256 "8ed912a385b2d6ea8c39a8e62460fbaff05c041f24be0ed644db51640f515e83"
+  version "0.9.3"
 
-  depends_on "python"
+  depends_on "python3"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/ce/b8/e7fa00e5de96229964b16e766e20bbde0e055a97fc475cef7deba9036593/boto3-1.15.18.tar.gz"
-    sha256 "f56148e2c6b9a2d704218da42f07d72f00270bfddb13bc1bdea20d3327daa51e"
+    url "https://files.pythonhosted.org/packages/ad/28/18bc9eb86ac557ecc7f3f6067a454888b90e8dcec49731870f1fc5f8e9a1/boto3-1.16.42.tar.gz"
+    sha256 "928e73f51f71469a1b0cead1fbb37f304457ec54400833c02c0c328e64581fea"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/02/af/2fccd3e251e406429ef433f1cf1fed24da0fa527c7604db757e219aa2bbc/botocore-1.18.18.tar.gz"
-    sha256 "e224754230e7e015836ba20037cac6321e8e2ce9b8627c14d579fcb37249decd"
+    url "https://files.pythonhosted.org/packages/ea/b6/feb570c421052117643d1e38874fe18b13350c9280c73c99b07ccd3887a0/botocore-1.19.42.tar.gz"
+    sha256 "f0b071fd08f4d72d7ba2c547da529abebe052705c1595be6d12a2151a75a6029"
   end
 
   resource "certifi" do
@@ -34,8 +35,8 @@ class AwsGate < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/5d/4b/7bb135c5787c003cdbc44990c5f41908f0f37135e0bb554e880d90fd5f6f/cryptography-3.1.1.tar.gz"
-    sha256 "9d9fc6a16357965d282dd4ab6531013935425d0dc4950df2e0cf2a1b1ac1017d"
+    url "https://files.pythonhosted.org/packages/b7/82/f7a4ddc1af185936c1e4fa000942ffa8fb2d98cff26b75afa7b3c63391c4/cryptography-3.3.1.tar.gz"
+    sha256 "7e177e4bea2de937a584b13645cab32f25e3d96fc0bc4a4cf99c27dc77682be6"
   end
 
   resource "idna" do
@@ -49,13 +50,13 @@ class AwsGate < Formula
   end
 
   resource "marshmallow" do
-    url "https://files.pythonhosted.org/packages/3b/34/cd19aa2e9b03ea3a4c8d3c5803f7550cf87e294f602cd9ac5679d5466c52/marshmallow-3.8.0.tar.gz"
-    sha256 "47911dd7c641a27160f0df5fd0fe94667160ffe97f70a42c3cc18388d86098cc"
+    url "https://files.pythonhosted.org/packages/ea/ac/dc6ed04439ddfb58414a0587cfaa0a2f36b53caf8fadc41b3b4211647434/marshmallow-3.9.1.tar.gz"
+    sha256 "73facc37462dfc0b27f571bdaffbef7709e19f7a616beb3802ea425b07843f4e"
   end
 
   resource "packaging" do
-    url "https://files.pythonhosted.org/packages/55/fd/fc1aca9cf51ed2f2c11748fa797370027babd82f87829c7a8e6dbe720145/packaging-20.4.tar.gz"
-    sha256 "4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"
+    url "https://files.pythonhosted.org/packages/d7/c5/e81b9fb8033fe78a2355ea7b1774338e1dca2c9cbd2ee140211a9e6291ab/packaging-20.8.tar.gz"
+    sha256 "78598185a7008a470d64526a8059de9aaa449238f280fc9eb6b13ba6c4109093"
   end
 
   resource "pycparser" do
@@ -79,8 +80,8 @@ class AwsGate < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/da/67/672b422d9daf07365259958912ba533a0ecab839d4084c487a5fe9a5405f/requests-2.24.0.tar.gz"
-    sha256 "b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b"
+    url "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz"
+    sha256 "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
   end
 
   resource "s3transfer" do
@@ -99,8 +100,8 @@ class AwsGate < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/81/f4/87467aeb3afc4a6056e1fe86626d259ab97e1213b1dfec14c7cb5f538bf0/urllib3-1.25.10.tar.gz"
-    sha256 "91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a"
+    url "https://files.pythonhosted.org/packages/76/d9/bbbafc76b18da706451fa91bc2ebe21c0daf8868ef3c30b869ac7cb7f01d/urllib3-1.25.11.tar.gz"
+    sha256 "8d7eaa5a82a1cac232164990f04874c594c9453ec55eef02eab885aa02fc17a2"
   end
 
   resource "wrapt" do
