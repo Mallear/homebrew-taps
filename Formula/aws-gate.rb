@@ -3,20 +3,20 @@ class AwsGate < Formula
 
   desc "Better AWS SSM Session manager CLI client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/2a/76/05e79ccab4d498d41f38723ef0fe73330a5c80845826baf2400ca7f208f1/aws-gate-0.9.3.tar.gz"
-  sha256 "8ed912a385b2d6ea8c39a8e62460fbaff05c041f24be0ed644db51640f515e83"
-  version "0.9.3"
+  url "https://files.pythonhosted.org/packages/d3/64/567c79c40fd85330a3298f5ad4556db3f2762a949de0f9732039bf5f0ca5/aws-gate-0.10.0.tar.gz"
+  sha256 "9cc837e3893ad2d95750f0858c99babb78d6e5f4be84638ad533c8dfbb41bc79"
+  version "0.10.0"
 
   depends_on "python3"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/ad/28/18bc9eb86ac557ecc7f3f6067a454888b90e8dcec49731870f1fc5f8e9a1/boto3-1.16.42.tar.gz"
-    sha256 "928e73f51f71469a1b0cead1fbb37f304457ec54400833c02c0c328e64581fea"
+    url "https://files.pythonhosted.org/packages/44/c2/c506760afd5ed0576baf297a36cab161ffaa7535dfbaae8f88bfd6aa1b94/boto3-1.16.47.tar.gz"
+    sha256 "05796ba6c65f79214ea61becae5126d5c924eed8a11874bc5536d611deabbe47"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/ea/b6/feb570c421052117643d1e38874fe18b13350c9280c73c99b07ccd3887a0/botocore-1.19.42.tar.gz"
-    sha256 "f0b071fd08f4d72d7ba2c547da529abebe052705c1595be6d12a2151a75a6029"
+    url "https://files.pythonhosted.org/packages/4f/84/5507fb09995557a456445b6faa550d4b1b4b57647e25b4272d0871c7776f/botocore-1.19.47.tar.gz"
+    sha256 "15584a86d6cb1f94ea785e8d3c98faeff8ddd0105356e1c106118d9ac12fa891"
   end
 
   resource "certifi" do
@@ -50,8 +50,8 @@ class AwsGate < Formula
   end
 
   resource "marshmallow" do
-    url "https://files.pythonhosted.org/packages/ea/ac/dc6ed04439ddfb58414a0587cfaa0a2f36b53caf8fadc41b3b4211647434/marshmallow-3.9.1.tar.gz"
-    sha256 "73facc37462dfc0b27f571bdaffbef7709e19f7a616beb3802ea425b07843f4e"
+    url "https://files.pythonhosted.org/packages/9b/3a/9f586ba2932b17d89c11373f28d7350a09bf87a6274ef29a37605c996c1e/marshmallow-3.10.0.tar.gz"
+    sha256 "4ab2fdb7f36eb61c3665da67a7ce281c8900db08d72ba6bf0e695828253581f7"
   end
 
   resource "packaging" do
