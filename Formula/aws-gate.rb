@@ -3,20 +3,20 @@ class AwsGate < Formula
 
   desc "Better AWS SSM Session manager CLI client"
   homepage "https://github.com/xen0l/aws-gate"
-  url "https://files.pythonhosted.org/packages/d3/64/567c79c40fd85330a3298f5ad4556db3f2762a949de0f9732039bf5f0ca5/aws-gate-0.10.0.tar.gz"
-  sha256 "9cc837e3893ad2d95750f0858c99babb78d6e5f4be84638ad533c8dfbb41bc79"
-  version "0.10.0"
+  url "https://files.pythonhosted.org/packages/27/27/5cf87f173ff65dc5b9ecd89d8fe1150223603936d5e6cf993967f753bd8d/aws-gate-0.10.1.tar.gz"
+  sha256 "44c2552f37cd3dd68ff0565583075b60f32ace64635faa00fef1ea255d644007"
+  version "0.10.1"
 
   depends_on "python3"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/44/c2/c506760afd5ed0576baf297a36cab161ffaa7535dfbaae8f88bfd6aa1b94/boto3-1.16.47.tar.gz"
-    sha256 "05796ba6c65f79214ea61becae5126d5c924eed8a11874bc5536d611deabbe47"
+    url "https://files.pythonhosted.org/packages/c8/c6/b4d9547a493ac2837f296f4a004dff6e7136cf6750d181769b8a61d63813/boto3-1.16.50.tar.gz"
+    sha256 "4d502a842b81fdac4b950d3b88a5b9067ce118213b122b20f4192003cb067986"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/4f/84/5507fb09995557a456445b6faa550d4b1b4b57647e25b4272d0871c7776f/botocore-1.19.47.tar.gz"
-    sha256 "15584a86d6cb1f94ea785e8d3c98faeff8ddd0105356e1c106118d9ac12fa891"
+    url "https://files.pythonhosted.org/packages/a9/8d/3fad5f5f090024b17b558beda10a2ea67857a380fd2cfb3fa18af0e0b552/botocore-1.19.50.tar.gz"
+    sha256 "709090ba61bba7dfa831b437d61cb469a85298d8f3ce5b8e12cdf41bd2b2bc61"
   end
 
   resource "certifi" do
