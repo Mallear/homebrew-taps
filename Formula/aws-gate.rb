@@ -8,6 +8,7 @@ class AwsGate < Formula
   version "0.11.2"
 
   depends_on "python3"
+  depends_on "rust" # to properly build cryptography
 
   resource "boto3" do
     url "https://files.pythonhosted.org/packages/63/81/22ecf9fd7a283ee3936c23552f370dfd261302d55b24dceabc25f9ab4254/boto3-1.20.26.tar.gz"
