@@ -7,7 +7,7 @@ class AwsGate < Formula
   sha256 "d9001dd61cd8f06c6ca78247a963f82d8fe0afe23e6325b78fed8f9ff48446c8"
   version "0.11.3"
 
-  depends_on "python3"
+  depends_on "python@3.10"
   depends_on "rust" # to properly build cryptography
 
   resource "boto3" do
